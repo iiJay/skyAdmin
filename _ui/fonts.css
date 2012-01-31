@@ -1,0 +1,19 @@
+/*
+  Fonts
+ */
+#dashboard {
+  font-size:20px;
+  font-family:Segoe Print Regular;
+  color: #e36969;
+  float:left;
+}
+ 
+/* Credits to Segoe Creators */
+@font-face {
+  font-family: Segoe Print Regular;
+  src: url('fonts/segoepr.ttf');
+}
+@font-face {
+  font-family: Secoe Print Bold;
+  src: url(fonts/segoeprb.ttf);
+}

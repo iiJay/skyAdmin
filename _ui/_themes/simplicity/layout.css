@@ -1,0 +1,254 @@
+/*
+  skyAdmin Admin Panel Layout
+ */
+
+@import url('../../fonts.css');
+ 
+body {
+  background: url(_img/bg.png) repeat-x;
+  margin: 0;
+}
+#wrapper {
+  background: url(_img/nav.png) repeat-y;
+  min-height: 300px;
+  height: auto;
+  overflow: auto;
+}
+#skyPanel {
+  background: url(_img/skyPanel.png);
+  width: 190px;
+  height: 55px;
+  margin: 0 auto;
+}
+/* Navigation */
+#left {
+  background: url(_img/nav.png);
+  height: 100%;
+  width: 220px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-right: 20px;
+  overflow: auto;
+}
+#left_cont {
+  float: right;
+  width: 190px;
+  margin-top: 10px;
+}
+#welcome {
+  width: 190px;
+  height: auto;
+  float: right;
+  text-align: center;
+  margin-top: 20px;margin-bottom: 10px;
+  font-family: Helvetica;font-size: 11px;color: #a4a4a4;
+}
+#accordionButton {
+  background:url(_img/nav_header.png);
+  height: 23px;
+  width: 170px;
+  cursor: pointer;cursor: hand;
+  text-align: right;
+  padding: 12px 10px 5px 10px;
+  margin-top: 10px;
+  font-family: Helvetica;font-size: 15px;color: #fff;text-shadow: 1px 1px 0px #a04a4a;font-weight: bold;
+}
+#accordionContent {
+  background: url(_img/nav_arrow.png) repeat-x;
+  width: 170px;
+  height: auto;
+  text-align: right;
+  padding: 10px;
+  margin-top: 3px;
+  display: none;
+  font-family: Tahoma;font-size: 13px;color: #dcdcdc;
+}
+#accordionContent ul {
+  list-style: none;
+  margin: none;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+#accordionContent ul li {
+  background: none;
+  margin: none;margin-bottom: 5px;
+}
+#accordionContent a, #accordionContent a:link, #accordionContent a:visited {
+  color: #dcdcdc;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+#accordionContent a:hover {
+  color: #fff;
+}
+
+/* Main Contents */
+#main {
+  height: auto;
+  overflow: auto;
+  margin-left: 240px;margin-right: 30px;
+  font-family: Tahoma;font-size: 11px;color: #000;
+}
+
+/* Floats */
+.left {
+  float: left;
+  margin-right: 10%;
+  margin-top: 10px;
+}
+.right {
+  float: right;
+  margin-top: 10px;
+}
+
+/* List UI */
+#content ul {
+  list-style: none;
+  margin: none;
+}
+#content ul li {
+  padding: 5px;
+  margin: none;
+  overflow: auto;
+  font-size: 20px;
+  margin-left: -40px;
+}
+#content ul li:nth-child(odd) {
+  background: #f4f4f4;
+  margin: none;
+}
+#content ul li:nth-child(even) {
+  background: #e4e4e4;
+  margin: none;
+}
+#content ul li img {
+  margin-bottom: -5px;
+  margin-top: -5px;
+  float: right;
+}
+#content ul li a, #content ul li a:link, #content ul li a:hover, #content ul li a:visited {
+  font-size: 20px;
+  font-family: Tahoma;
+  color: #000;
+  text-decoration: none;
+}
+
+/*
+  Errors
+ */
+#error {
+  background: #e36969;
+  width: 100%;
+  height: auto;
+  font-family: Helvetica;font-size: 11px;color: #fff;text-align: center;font-weight: bold;text-shadow: 1px 1px 0px #a04a4a;
+  position: fixed;top: 0px;left: 0px;
+  padding: 10px;
+  margin: 0 auto;
+  border-bottom: 3px solid #a04a4a;
+  webkit-border-radiud: 5px;moz-border-radius: 5px;border-radius: 5px;
+}
+#success {
+  background: #5797df;
+  width: 100%;
+  height: auto;
+  font-family: Helvetica;font-size: 11px;color: #fff;text-align: center;font-weight: bold;text-shadow: 1px 1px 0px #497fbc;
+  position: fixed;top: 0px;left: 0px;
+  padding: 10px;
+  margin: 0 auto;
+  border-bottom: 3px solid #497fbc;
+  webkit-border-radiud: 5px;moz-border-radius: 5px;border-radius: 5px;
+}
+
+/*
+  Form
+ */
+input[type="text"]{
+  background: #fff;
+  border: 1px solid #f1f1f1;
+  font-family: Helvetica;font-size: 11px;
+  padding: 10px;
+  -moz-box-shadow: 2px 2px 2px #eeeeee;-webkit-box-shadow: 2px 2px 2px #eeeeee;box-shadow: 2px 2px 2px #eeeeee;
+  webkit-border-radius: 5px;moz-border-radius: 5px;border-radius: 5px;
+}
+input[type="password"]{
+  background: #fff;
+  border: 1px solid #f1f1f1;
+  font-family: Helvetica;font-size: 11px;
+  padding: 10px;
+  -moz-box-shadow: 2px 2px 2px #eeeeee;-webkit-box-shadow: 2px 2px 2px #eeeeee;box-shadow: 2px 2px 2px #eeeeee;
+  webkit-border-radius: 5px;moz-border-radius: 5px;border-radius: 5px;
+}
+input[type="submit"] {
+  background: #fff;
+  border: 1px solid #f1f1f1;
+  font-family: Helvetica;font-size: 11px;
+  padding: 10px;
+  -moz-box-shadow: 2px 2px 2px #eeeeee;-webkit-box-shadow: 2px 2px 2px #eeeeee;box-shadow: 2px 2px 2px #eeeeee;
+  webkit-border-radius: 5px;moz-border-radius: 5px;border-radius: 5px;
+}
+textarea {
+  border: 1px solid #f1f1f1;
+  font-family: Helvetica;font-size: 11px;
+  padding: 10px;
+  -moz-box-shadow: 2px 2px 2px #eeeeee;-webkit-box-shadow: 2px 2px 2px #eeeeee;box-shadow: 2px 2px 2px #eeeeee;
+  webkit-border-radius: 5px;moz-border-radius: 5px;border-radius: 5px;
+}
+
+/* Contents */
+#content {
+  width: 45%;
+  height: auto;
+  font-family: Tahoma;font-size: 11px;
+}
+#header {
+  background: url(_img/header.png);
+  height: 25px;
+  padding: 10px 10px 5px 10px;
+  cursor: pointer;cursor: hand;
+  border: 1px solid #bababa;
+  margin-top: 15px;
+  font-family: Helvetica;font-size: 15px;color: #262626;font-weight: bold;text-shadow: 1px 1px 0px #dcdcdc;
+  -moz-border-radius-topright: 5px;
+  border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  border-top-left-radius: 5px;
+}
+#words {
+  background: #f8f8f8;
+  padding: 10px;
+  font-family: Tahoma;font-size: 11px;color: #262626;
+  border: 1px solid #bababa;
+  -moz-border-radius-bottomright: 5px;
+  border-bottom-right-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#content a, #content a:link, #content a:hover, #content a:visited {
+  font-family: Segoe Print;
+  color: #ca5d5d;
+  text-decoration: none;
+}
+#footer {
+  font-family: Segoe Print;font-size: 11px;
+  position: fixed;top: 3px;right: 5px;
+}
+#footer a, #footer a:link, #footer a:visited, #footer a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+/* Extras */
+#login_header {
+	background: url(_img/login_header.png);
+	height: 60px;
+	width: 300px;
+	margin-left: -25px;
+}
+#login_cont {
+	width: 45%;
+	height: auto;
+	font-family: Tahoma;font-size: 11px;
+	margin: 0 auto;
+}

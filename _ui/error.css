@@ -1,0 +1,81 @@
+/*
+ * skyAdmin Error Template 
+ */
+body {
+	background: url('_error/bg.png');
+	margin: 0;
+}
+
+/*
+ * Top
+ */
+#top {
+	background: url('_error/top.png');
+	height: 35px;
+}
+#skyAdmin {
+	background: url('_error/logo.png');
+	height: 35px;
+	width: 200px;
+	margin: 0 auto;
+}
+
+/*
+ * Container
+ */
+#container {
+	background: #fff;
+	width: 480px;
+	height: auto;
+	padding: 10px;
+	margin: 0 auto;
+	font-family: Tahoma;font-size: 11px;color: #2c2c2c;
+	border: 1px solid #ececec;
+	-moz-border-radius-bottomright: 15px;
+    border-bottom-right-radius: 15px;
+    -moz-border-radius-bottomleft: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+/*
+ * Headers
+ */
+#head {
+	background: url('_error/header.png');
+	width: 470px;
+	height: 25px;
+	margin-bottom: 5px;
+	font-family: Arial;font-weight: bold;font-size: 20px;color: #476e89;
+	padding: 5px;
+	text-align: center;
+	text-shadow: 1px 1px 0px #669ec4;
+}
+.error:before {
+	content: 'skyAdmin Error';
+}
+.install:before {
+	content: 'skyAdmin Installation';
+}
+
+/*
+ * Footer
+ */
+#foot {
+	width: 500px;
+	height: auto;
+	margin: 0 auto;
+	font-family: Tahoma;font-size: 11px;color: #2c2c2c; 
+	text-align: center;
+}
+
+/*
+ * Handlers
+ */
+#red {
+	background: #a04a4a;
+	color: #f7f7f7;
+	padding: 5px;
+	text-shadow: 1px 1px 0px #843d3d;
+	border-right: 1px solid #843d3d;border-left: 1px solid #843d3d;border-top: 1px solid #843d3d;border-bottom: 3px solid #843d3d;
+	-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;
+}
