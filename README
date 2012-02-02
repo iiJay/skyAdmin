@@ -1,0 +1,15 @@
+skyAdmin README
+
+Version: 2.5.x - 2.5.1
+By: Jian Ting
+Website: http://jtprojects.me/
+License: MIT License
+
+  In skyAdmin 2.5.1, the common error of template.inc.php can be averted. By defining ENABLE_SKYADMIN_THEME as false. This would tell skyAdmin to not use any
+  theme.
+  
+  Like so:
+  
+  <?php
+    define('ENABLE_SKYADMIN_THEME', FALSE);
+  ?>
