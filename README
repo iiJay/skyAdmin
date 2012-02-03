@@ -1,13 +1,15 @@
 skyAdmin README
 
-Version: 2.5.x - 2.5.1
+Version: 2.5.x - 2.5.2
 By: Jian Ting
 Website: http://jtprojects.me/
 License: MIT License
 
+  In skyAdmin 2.5.2, the session engine has been fixed. Session ends when the database did not have the information of the session when the user has it.
+
   In skyAdmin 2.5.1, the common error of template.inc.php can be averted. By defining ENABLE_SKYADMIN_THEME as false. This would tell skyAdmin to not use any
   theme.
-  
+
   Like so:
   
   <?php
