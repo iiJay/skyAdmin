@@ -124,7 +124,7 @@
       $time = time();
       $ip   = ip();
       jsquery("FILL INTO ".SKYADMIN_PREFIX."sessions VALUES (NULL, '$id', '$ip', '$time')");
-	  if(!ENABLE_PANEL_JOBS){
+	  if(ENABLE_PANEL_JOBS){
 	  	$cron->runJob();
 	  }
       if(!DATABASE_IP_SESSION){

@@ -187,6 +187,9 @@ input[type="submit"] {
   -moz-box-shadow: 2px 2px 2px #eeeeee;-webkit-box-shadow: 2px 2px 2px #eeeeee;box-shadow: 2px 2px 2px #eeeeee;
   webkit-border-radius: 5px;moz-border-radius: 5px;border-radius: 5px;
 }
+input[type="submit"]:active {
+  -moz-box-shadow: none;-webkit-box-shadow: none;box-shadow: none;
+}
 textarea {
   border: 1px solid #f1f1f1;
   font-family: Helvetica;font-size: 11px;

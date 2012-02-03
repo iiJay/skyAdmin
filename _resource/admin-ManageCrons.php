@@ -22,6 +22,10 @@
    */
   if(!defined('BASEPATH'))die();
   if(isset($_GET['cron'])){
+  	if(!ENABLE_SKYADMIN_CRON_JOBS){
+  		require_once('_construct/cron.class.php');
+  		$cron = new skyAdmin_Cron();
+  	}
   	$cron->runJob()
 ?>
 <div id="<?php echo skyadmin_success_header; ?>">

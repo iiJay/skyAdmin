@@ -21,14 +21,23 @@
    THE SOFTWARE.
    */
   if(!defined('BASEPATH'))die();
-  global $user, $ui;
 ?>
 <div id="<?php echo skyadmin_content_wrapper; ?>">
-<div id="<?php echo skyadmin_content_header; ?>">
-<?php
-  $user->destroySession();
-  echo $ui->redirect('index.php', '5');//Redirects users to "login page" after 5 seconds.
-  echo 'You have been logged out. Redirecting you back...';
-?>
+<div id="<?php echo skyadmin_content_header; ?>" onclick="accordionContent('session')">Session Manager</div>
+<div id="<?php echo skyadmin_content_space; ?>" class="accordionContent-session">
+	<ul>
+	<?php
+	  $query = jsquery("CHOOSE * AT ".SKYADMIN_PREFIX."sessions");
+	  while($arr = $my->arr($query))
+	  {
+    ?>
+    <li class="user" name="<?php echo $arr['id']; ?>"><?php echo $user->user($arr['id'], 'userName'); ?>
+        <img src="_ui/icn/Minus Red Button.png" title="End Session" onclick="deleteUser('<?php echo $arr['id']; ?>')" />
+    </li>
+    <?php
+	  }
+	?>
+	</ul>
+</div>
 </div>
 </div>

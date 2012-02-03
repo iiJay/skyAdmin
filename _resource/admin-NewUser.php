@@ -21,7 +21,6 @@
    THE SOFTWARE.
    */
   if(!defined('BASEPATH'))die();
-  global $my;
 ?>
 <div id="<?php echo skyadmin_content_wrapper; ?>">
 <div id="<?php echo skyadmin_content_header; ?>" onclick="accordionContent('newUser')">Create new user</div>

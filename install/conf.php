@@ -34,7 +34,7 @@
   $core['theme']['name']        = 'simplicity';//skyAdmin Theme folder name under the "_themes" folder.
 
   define('DATABASE_IP_SESSION', false);//Only enable this if you have a static IP.
-  define('SKYADMIN_BUILD', '2.5.1');//Your current skyAdmin Build.
+  define('SKYADMIN_BUILD', '2.5.2');//Your current skyAdmin Build.
   define('SKYADMIN_RETURN_ERROR', true);//You are recommended to enable this. Shows users "403" Alert or "404" not found errors.
   define('ENABLE_SKYADMIN_CRON_JOBS', false);//Enabling cron jobs used by skyAdmin. You can disable certain jobs in the panel.
   define('ENABLE_PANEL_JOBS', false);//Disable this only if you want Cron Jobs to be done when someone is successful in logging into the panel.
@@ -70,9 +70,9 @@
   }
   
   set_error_handler('skyAdminError', E_ALL);
-  if(isset($_SESSION['skyAdmin_id'])){
+  if(isset($_COOKIE['skyAdmin_id'])){
   	if(!$user->loggedIn){
-  		session_destroy();
+  		setcookie('skyAdmin_id' ,'', time()-3600);
   	}
   }
 ?>

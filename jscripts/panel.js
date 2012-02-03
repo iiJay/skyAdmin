@@ -45,3 +45,13 @@ function deleteGroup(id){
     $(div).fadeOut('slow');
   });
 }
+function deleteSession(id){
+	$.ajax({
+		type: 'POST',
+		url: 'ajax.php',
+		data: 'mode=deleteSession&id=' + id,
+	}).done(function(){
+		var div = 'li[name="' + id + '"]';
+		$(div).fadeOut('slow');
+	});
+}

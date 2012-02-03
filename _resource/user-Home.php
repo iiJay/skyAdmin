@@ -48,6 +48,16 @@
   </div>
   </div>
   
+  <div id="<?php echo skyadmin_content_wrapper; ?>" class="<?php echo skyadmin_content_float_left; ?>">
+  	<div id="<?php echo skyadmin_content_header; ?>" onclick="accordionContent('sa_notes')">Latest skyAdmin Notice</div>
+  	<div id="<?php echo skyadmin_content_space; ?>" class="accordionContent-sa_notes">
+  		<?php
+  		  $file = file_get_contents('http://jtpapi.com/res/api.js?load=skyadmin_notice');
+		  echo $file;
+  		?>
+  	</div>
+  </div>
+  
   <div id="<?php echo skyadmin_content_wrapper; ?>" class="<?php echo skyadmin_content_float_right; ?>">
     <div id="<?php echo skyadmin_content_header; ?>" onclick="accordionContent('build')">Your skyAdmin</div>
     <div id="<?php echo skyadmin_content_space; ?>" class="accordionContent-build">

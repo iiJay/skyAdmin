@@ -35,7 +35,11 @@
 	if(strpos($string, '();') === false){
 		$string = $string;
 	}else{
-		$string = str_replace('();', '', $string);
+		if(!strpos($string, array('<pre>', '</pre>', '<code>', '</code>'))){
+			$string = $string;
+		}else{
+			$string = str_replace('();', '', $string);
+		}
 	}
 	return $string;
   }

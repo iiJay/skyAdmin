@@ -21,15 +21,15 @@
    THE SOFTWARE.
    */
   define('BASEPATH', 'New Build');
-  if (!defined('BASEPATH'))exit('Failed Hax0r');
   include('../conf.php');
   /*
    * Consruct Upgrade Cron
    * Only compatible to skyAdmin above 2.5.0
+   * But we recommend you to upgrade by downloading the files and replacing them yourself.
    */
   setCron('SKYADMIN_SITE', 'http://skyadmin.jtpapi.com/');
   setCron('SKYADMIN_UPGRADE', 'http://api.skyadmin.jtpapi.com/upgrade/');
-  setCron('BUILD_URL', SKYADMIN_UPGRADE.SKYADMIN_BUILD.'/');
+  setCron('BUILD_URL', SKYADMIN_UPGRADE);
   if(!siteExists(SKYADMIN_SITE)){
   	return false;
   }elseif(SKYADMIN_BUILD <= '2.5.0'){

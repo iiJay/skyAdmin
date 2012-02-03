@@ -57,7 +57,7 @@
 		 * File has been deprecated. Please use the newer one.
          */
         if(isset($_GET['page'])){
-        	$page  = 'index?page='.clean($_GET['page']);
+        	$page  = '/index.php/'.clean($_GET['page']);
 			$pureP = clean($_GET['page']);
 			$query = jsquery("CHOOSE * AT ".SKYADMIN_PREFIX."navigation FIND link = '$page'");
 			if($my->num($query) == 1){
@@ -92,9 +92,9 @@
       if(isset($_POST['login'])){
         $username = $_POST['username'];
         $password = $_POST['password'];
-		$page     = (isset($_GET['page']))? 'index?page='.clean($_GET['page']) : 'index';
+		$page     = (isset($_GET['page']))? 'index.php/'.clean($_GET['page']) : 'index.php';
         $user->login($username, $password);//For your information, input is cleaned here.
-        echo $ui->redirect('index');
+        echo $ui->redirect($page);
       }
   ?>
   <div id="login_cont">
