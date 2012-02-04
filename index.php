@@ -91,7 +91,7 @@
       if(isset($_POST['login'])){
         $username = $_POST['username'];
         $password = $_POST['password'];
-		$page     = (isset($_GET['page']))? 'index.php/'.clean($_GET['page']) : 'index.php';
+		$page     = (isset($_GET['page']))? 'index?page='.clean($_GET['page']) : 'index.php';
         $user->login($username, $password);//For your information, input is cleaned here.
         echo $ui->redirect($page);
       }
