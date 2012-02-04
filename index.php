@@ -53,8 +53,7 @@
   <div id="main">
     <?php
         /*
-         * Only compatible with >= skyAdmin 2.3.7
-		 * File has been deprecated. Please use the newer one.
+         * Only compatible with skyAdmin 2.5.0 or greater.
          */
         if(isset($_GET['page'])){
         	$page  = 'index?page='.clean($_GET['page']);
