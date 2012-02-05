@@ -41,7 +41,7 @@
 <div id="<?php echo skyadmin_content_header; ?>" onclick="accordionContent('createNav')">Create Navigation link</div>
 <div id="<?php echo skyadmin_content_space; ?>" class="accordionContent-createNav">
 <div align="center">
-<form action="" method="POST">
+<form action="<?php echo $PHP_SELF; ?>" method="POST">
   <label for="name">Link Name</label><br />
   <input type="text" name="name" id="name" /><br /><br />
   <label for="resource">Resource (E.g. <strong>admin-Chat</strong>.php)</label><br />
